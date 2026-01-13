@@ -26,6 +26,7 @@ jobs:
       - name: Build
         run: ./gradlew bootJar -x test
 
+      # log into docker
       - name: Docker Hub login
         uses: docker/login-action@v2
         with:
