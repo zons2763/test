@@ -13,7 +13,7 @@ public class TestController {
 
     @GetMapping
     public String getCustomers(Model model) {
-        model.addAttribute(customerService.getCustomers());
+        model.addAttribute("customers", customerService.getCustomers());
         return "index";
     }
 }
